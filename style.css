@@ -103,7 +103,7 @@ h2{
 /*--------------------*/
 main{
     grid-area: main;
-    background-image: url(images/fondo.jpeg);
+    background-image: url();
     background-repeat: no-repeat;
     background-position: cover;
     text-align: justify;
@@ -199,8 +199,11 @@ footer {
     grid-template-areas: "header header header header"
     "main main main main"
     "footer footer footer footer";
-    background-size: contain;
+    
+    background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    
 }
 
 
@@ -213,8 +216,8 @@ footer {
 .productos_main{
     height: 100vh;/* alto del navegador */
     display: grid; /* activa el GRID */
-    grid-template-rows: 1fr 1fr 1fr 1fr; /* alt de cada area */
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* ancho de cada area */
+    grid-template-rows: repeat(4, 1fr); /* alt de cada area */
+    grid-template-columns: repeat(4, 1fr);/* ancho de cada area */
     grid-template-areas: "header header header header"
     "main main main main"
     "footer footer footer footer";
