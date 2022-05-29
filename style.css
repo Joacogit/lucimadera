@@ -20,9 +20,11 @@ body{
 
 
 header {
-    grid-area: header;
+    grid-area: header; /* consultar porq el "HEADER" figura en blanco */
     background-image: url(images/fondomadera.jpg);
-    padding-top: 50px;
+    padding-top: 20px;
+
+
 
     
 }
@@ -64,7 +66,6 @@ h2{
 .menu {
     background-color: beige;
     height: 75px;
-    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,9 +101,19 @@ h2{
 
 
 
-/*--------------------*/
+/*---- INDEX----------------*/
+
+
+aside {
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
 main{
-    grid-area: main;
+    grid-area: main; /* consultar porq el "MAIN" figura en blanco */
     background-image: url();
     background-repeat: no-repeat;
     background-position: cover;
@@ -111,7 +122,11 @@ main{
     margin-right: 10px;
     padding-right: 15px;
     
-    
+}
+
+.card-text{
+    text-align: left;
+    background-color: rgb(250, 248, 245);
 }
 
 .p{
@@ -137,8 +152,10 @@ main{
 /*-----------------------------*/
 
 footer {
-    grid-area: footer;
+    grid-area: footer; /* consultar porq la palabra "FOOTER" figura en blanco */
     background-color: beige;
+    padding-top: 20px;
+    padding-bottom: 20px;
      
 
 }
@@ -189,60 +206,96 @@ footer {
     transform: scale(1.04);
   }
   
+
+
+
+
+
+
   /* -----  SOLAPA NOSOTROS ------ */
 
   .nosotros{
-    height: 100vh;/* alto del navegador */
+    height: 70vh;/* alto del navegador */
     display: grid; /* activa el GRID */
     grid-template-rows: 1fr 1fr; /* alt de cada area */
     grid-template-columns: 1fr 1fr; /* ancho de cada area */
     grid-template-areas: "header header header header"
     "main main main main"
     "footer footer footer footer";
-    
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     
 }
 
+.card {
+    margin-left: 100px;
+    
+
+    
+}
 
 
 .volver{
     padding-left: 40px;
+    
 }
+
+
+
+
+
+
 /* --------- SOLAPA PRODUCTOS ----------- */
 
 .productos_main{
-    height: 100vh;/* alto del navegador */
+    height: 200vh;/* alto del navegador */
     display: grid; /* activa el GRID */
-    grid-template-rows: repeat(4, 1fr); /* alt de cada area */
-    grid-template-columns: repeat(4, 1fr);/* ancho de cada area */
-    grid-template-areas: "header header header header"
-    "main main main main"
-    "footer footer footer footer";
-    gap: 30px;
+    grid-template-rows: repeat(2, 1fr); /* alt de cada area */
+    grid-template-columns: repeat(3, 1fr);/* ancho de cada area */
+    grid-template-areas: "header"
+    "main main main"
+    "footer";
+    gap: 10px;
     background-size: contain;
     background-attachment: fixed;
 
 }
 
-/* --------- SOLAPA CONTACTOS ----------- */
 
+
+
+
+
+
+
+
+
+/* --------- SOLAPA CONTACTO -----------*/
 
 .formulario{
+    height: 50vh;/* alto del navegador */
     display: grid; /* activa el GRID */
-    grid-template-rows: 1fr 1fr 1fr 1fr; /* alt de cada area */
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* ancho de cada area */
+    grid-template-columns: repeat(2, 1fr); /* ancho de cada area */
     grid-template-areas: "header header header header"
     "main main main main"
     "footer footer footer footer";
-	background-color: rgb(253, 249, 249);
-	color: rgb(240, 230, 230);
 	z-index: 0.5; /*delante de la imagen*/
     background-image: url(images/iluminacion-para-habitaciones.jpg);
     background-size: contain; /*la img se ajusta*/
     background-attachment: fixed; /*img scroll*/
-    
-    
+    color: aliceblue;
+    padding-left: 10px;
+    padding-top: 10px;
 }
+.imgcuadros{
+    z-index: 0.5px;
+}
+.mapa {
+    padding-left: 100px;
+  
+}
+.fondoFooterContacto {
+    background-image: url(images/imgfootercontacto.jpg);
+}
+

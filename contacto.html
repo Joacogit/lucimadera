@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
     
     <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,12 @@
     <!-- fin google fonts -->
     
     <title>CONTACTO</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
@@ -32,15 +38,42 @@
     
     <form action="ACERCANOS TU CONSULTA">
         
-        <input type="text">Nombre y Apellido
-        <input type="text">Teléfono
-        <input type="text">E-mail
-        <textarea name="" id="" cols="30" rows="10"></textarea>Consulta
-        <button>Enviar</button>
-    </form>
-    
+        <input type="Nombre y Apellido">  Nombre y Apellido <br>
+        <input type="Teléfono"> Teléfono <br>
+        <input type="E-mail"> E-mail <br>
+        <textarea name="Escribe aquí tu consulta" id="" cols="30" rows="10"> Escribe aquí tu consulta </textarea>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Enviar
+        </button>
+  
+  <!-- Modal Bootstrap -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+        <div class="modal-dialog"></div>
+        <div class="modal-content"></div>
+        <div class="modal-header"> Su mensaje ha sido enviado con éxito. </div>    
+    </div>
+
+
+</form>
+
 </main>
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- fin formulario -->
 
@@ -48,20 +81,28 @@
 
 
 
-    <footer>
+    <footer class="fondoFooterContacto">
         <div class="volver">
         <a href="index.html" role="button"><img src="images/volver.png" alt="volver al inicio"></a>
         </div>
 
+        
         <ul class="social">
             <li><a href="https://instagram.com/lucimadera.arg?igshid=YmMyMTA2M2Y=" role="button"><img src="images/instagram_32.png" alt=""></a></li>
             
             <li><a href="https://www.facebook.com/people/Lucí-Madera/100070069163962/" role="button"><img src="images/facebook32.png" alt=""></a></li>
             
             <li><a href="https://api.whatsapp.com/message/SVDZFGJYSJEEK1?autoload=1&app_absent=0" role="button"><img src="images/whatsapp_32.png" alt=""></a></li>
+
+
+
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49805.66646538279!2d-62.29147751547683!3d-38.72115733576567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbcabdc1302bd%3A0x76d1d88d241e7a11!2sBah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653831309119!5m2!1ses-419!2sar" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </footer>
 
 </div> <!-- fin div contenedor de todo -->
 
+<!--link body de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
