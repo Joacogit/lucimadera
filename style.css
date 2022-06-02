@@ -6,39 +6,27 @@
 body{
     font-family: 'Nunito';
 }
-.container {
-    height: 100vh;/* alto del navegador */
-    display: grid; /* activa el GRID */
-    grid-template-rows: 1fr 2fr 1.5fr 2fr; /* alt de cada area */
-    grid-template-columns: 1fr 1.5fr 3fr 1fr; /* ancho de cada area */
-    grid-template-areas: "header header header header"
-    "aside aside main main"
-    "footer footer footer footer";
-}
-
-
 
 
 header {
     grid-area: header; /* consultar porq el "HEADER" figura en blanco */
     background-image: url(images/fondomadera.jpg);
     padding-top: 20px;
-
-
-
     
 }
 /*------------------- LOGO ---------------*/
+
 .animacionLogo{
     width: 80px;
     height: 80px;
     padding-top: 30px;
     padding-left: 15px;
+    transition: all 3s;
 }
 
 .animacionLogo:hover{
     transform: scale(1.5) translateX(120px) rotate(360deg);
-    transition: all 1.5s;
+    
 }
 
 /*-----------------------------------*/
@@ -47,9 +35,9 @@ h1{
     display: flex;
     justify-content: center;
     font-size: 35px;
-    font-family: nunito;
     color: darkgray;
 }
+
 
 h2{
     display: flex;
@@ -187,8 +175,8 @@ footer {
 .grid-container { /*caja q contiene todo*/
     display: grid; /*activa grid*/
     grid-area: auto;
-    grid-template-columns: repeat(3, 1fr); /*cantidad*/
-    grid-template-rows: repeat(3, 1fr); /*cantidad*/
+    grid-template-columns: repeat(3, 1fr);      /*cantidad*/
+    grid-template-rows: repeat(3, 1fr);         /* cuantas filas tengo */
     gap: 10px; /*espaciado e/ imagenes*/
     padding: 50px; 
     grid-auto-flow: dense;
@@ -219,9 +207,14 @@ footer {
 
 
 
-/* estilo nueva galería */
+/* -----------SOLAPA NUEVA GALERIA------------ */
 
-.col-lg-4:hover {
+.main-galeria1{
+    background-color: #0d1113;
+   
+}
+
+.col-lg-4 {
 
     display: grid; /*activa grid*/
     grid-area: auto;
@@ -232,22 +225,16 @@ footer {
     align-items: center;
     justify-content: center;
 
-    transform: scale(1.3);
-    transition: transform 0.9s ease-in-out;
     border-radius: 4px;
-
-    gap: 10px;
-    padding: 1px;/*espaciado entre la pag y las imgs*/
-    background-color: black;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     
 }
-
-
-
-
+.col-lg-4:hover{
+    transform: scale(1.1);
+    transition: transform 1.5s ease-in-out;
+}
 
 
 
@@ -269,17 +256,12 @@ footer {
 
 .card {
     margin-left: 100px;
-    
-
-    
 }
 
 
 .volver{
     padding-left: 40px;
-    
 }
-
 
 
 
@@ -288,16 +270,16 @@ footer {
 /* --------- SOLAPA PRODUCTOS ----------- */
 
 .productos_main{
-    height: 180vh;/* alto del navegador */
-    display: grid; /* activa el GRID */
-    grid-template-rows: repeat(2, 1fr); /* alt de cada area */
-    grid-template-columns: repeat(3, 1fr);/* ancho de cada area */
-    grid-template-areas: "header"
-    "main main main"
-    "footer";
-    gap: 10px;
-    background-size: contain;
-    background-attachment: fixed;
+    height: 180vh;                              /* alto del navegador */
+    display: grid;                              /* activa el GRID */
+    grid-template-rows: repeat(3, 1fr);         /* cuantas filas tengo */
+    grid-template-columns: repeat(3, 1fr);      /* columnas > ancho de cada area */
+    grid-template-areas: "header"               /* fila 1 */
+    "main main main"                            /* fila 2 */
+    "footer";                                   /* fila 3 */
+    gap: 10px;                                  /* espacio entre los elementos */
+    background-size: contain;                   
+    background-attachment: fixed;               
     
 }
 
@@ -330,9 +312,8 @@ footer {
 }
 
 
-.imgcuadros{
-    z-index: 0.5px;
-}
+
+
 .mapa div {
     display: flex;
     justify-content:center;
@@ -345,6 +326,4 @@ footer {
 }
 
 
-
-/*  HTML - NUEVAGALERIA  */
 
