@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
+  
 <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,33 +24,65 @@
 
 
 
-<body>
 
-   
+
+<body>   
        
         
-       
-
-        <div class="productos">
-
-
-        <header class="titulosh2">
-            <h2>PRODUCTOS</h2>   
-        </header>
-
-
-    <main class="productos_main">
+<div class="container">
+  <header class="titulosh2">
+    <h2>PRODUCTOS</h2>
+      
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
         
+        <a class="navbar-brand" href="index.html">LUCÍMADERA</a>
         
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">         
+                <a class="nav-link nav-item active" href="nosotros.html">Nosotros</a>
+              </li>
+              
+              <li class="nav-item">  
+                <a class="nav-link nav-item active" href="productos.html">Productos</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link nav-item active" href="galeria.html">Galería</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link nav-item active" href="contacto.html">Contacto</a>
+              </li>
+
+            </ul>
+
+        </div> <!-- fin div de la lista -->
+
+      </div> <!-- fin div container fluid -->
+    </nav><!-- fin nav -->
+  </header> <!-- fin header -->
 
 
 
-<!-- bootstrap cards -->
 
+
+
+    
+  
+<main class="productos_main"> <!-- bootstrap cards -->
+
+<div class="row"> <!-- primer fila -->
 
 <!-- card 1 - CUADRO CON LAMPARA -->
-<div class="card" style="width: 18rem;">
-    <img src="images/cuadcestante.jpeg" class="card-img-top" alt="...">
+  <div class="card col-lg-4">
+    <img src="images/cuadcestante.jpeg" alt="...">
     <div class="card-body">
     <h5>CUADRO CON LÁMPARA</h5>
       <p class="card-text"> Madera Pintada y Laqueada. Portalámparas vintage con perilla de encendido/apagado. Lámpara 5 w cálida de filamentos decorativa. Cable textil de color a elección. Medidas: 60 x 38 cm Ideal para apoyar tus llaves, el celu, adornos, una plantita o tus libros preferidos. Envíos a todo el país ¡Consultanos lo que necesites!</p>
@@ -58,10 +90,9 @@
     </div>
   </div>
 
-
 <!-- CARD 2 - APLIQUE-->
-<div class="card" style="width: 18rem;">
-    <img src="images/aplique.jpeg" class="card-img-top" alt="...">
+<div class="card col-lg-4">
+    <img src="images/aplique.jpeg" alt="...">
     <div class="card-body">
         <h5>APLIQUE DE PARED</h5>
       <p class="card-text"> Construido con madera pintada y laqueada, caños, portalámpara vintage con perilla de encendido/apagado y lámpara de filamentos led cálida decorativa. Envíos a todo el país ¡Consultanos lo que necesites!</p>
@@ -69,11 +100,9 @@
     </div>
   </div>
 
-
 <!-- card 3 - CUADRO DECO CON LUZ -->
-
-<div class="card" style="width: 18rem;">
-    <img src="images/555.jpeg" class="card-img-top" alt="...">
+  <div class="card col-lg-4">
+    <img src="images/555.jpeg" alt="...">
     <div class="card-body">
         <h5>CUADRO DECO CON LUZ</h5>
       <p class="card-text"> Construido con madera laqueada, lienzo y luces a pilas. Medidas: 68 x 30 cm. Ideal para decorar tu hogar con la palabra o frase que mas te gusta y darle ese toque de iluminación cálido a tu espacio favorito. Envíos a todo el país ¡Consultanos lo que necesites!</p>
@@ -81,11 +110,13 @@
     </div>
   </div>
 
+</div> <!-- fin primer fila -->  
+
+<div class="row">
 
 <!-- card 4 - VELADOR  -->
-
-<div class="card" style="width: 18rem;">
-    <img src="images/veldepared.jpeg" class="card-img-top" alt="...">
+  <div class="card col-lg-4">
+    <img src="images/veldepared.jpeg" alt="...">
     <div class="card-body">
         <h5>VELADOR DE PARED</h5>
       <p class="card-text"> Construido con madera pintada y laqueada, caños, portalámpara vintage con perilla de encendido/apagado, cable decorativo textil de color y lámpara de filamentos led cálida decorativa. Muy práctico y cómodo, ideal para colgar sobre tu mesita de luz y tener mas espacio en ella. Consultanos por WhatsApp disponibilidad y colores.</p>
@@ -93,12 +124,9 @@
     </div>
   </div>
 
-
-
 <!-- card 5 - LAMPARA DECO -->
-
-<div class="card" style="width: 18rem;">
-    <img src="images/lampdeco.jpeg" class="card-img-top" alt="...">
+  <div class="card col-lg-4">
+    <img src="images/lampdeco.jpeg" alt="...">
     <div class="card-body">
         <h5>LÁMPARA DECO</h5>
       <p class="card-text"> Construida con base de madera pintada y laqueada, caños, portalámpara vintage con perilla de encendido/apagado, cable decorativo textil de color y lámpara de filamentos led cálida decorativa. Medidas de la base: 30 x 12 cm.</p>
@@ -106,10 +134,9 @@
     </div>
   </div>
 
-<!-- card 5 - CUADRO CON ESTANTE -->
-
-<div class="card" style="width: 18rem;">
-    <img src="images/cuadcestante2.jpeg" class="card-img-top" alt="...">
+<!-- card 6 - CUADRO CON ESTANTE -->
+  <div class="card col-lg-4">
+    <img src="images/cuadcestante2.jpeg" alt="...">
     <div class="card-body">
         <h5>CUADRO CON ESTANTE</h5>
       <p class="card-text"> Madera Pintada y Laqueada. Medidas: 60 x 38 cm Ideal para apoyar tus llaves, el celu, adornos, una plantita o tus libros preferidos. Envíos a todo el país ¡Consultanos lo que necesites!</p>
@@ -117,11 +144,9 @@
     </div>
   </div>
 
+</div>
 
-
-<!-- fin cards-->
-   
-    </main>
+</main> <!-- fin cards-->
 
 
 
@@ -129,27 +154,30 @@
 <!-- footer -->
 
 
-            <footer>
-          <!-- div footer -->
-          <div>
-                <a class="volver" href="index.html" role="button"><img src="images/volver.png" alt="volver al inicio"></a>
-          </div>
-
-                <ul class="social">
-                  <li class="socialIcons"><a href="https://instagram.com/lucimadera.arg?igshid=YmMyMTA2M2Y=" role="button"><img src="images/instagram_32.png" alt=""></a></li>
+  <footer>
+    <div>       
+      <ul class="social ">
+        
+        <li class="socialIcons">
+          <a href="https://instagram.com/lucimadera.arg?igshid=YmMyMTA2M2Y=" role="button">
+            <img src="images/instagram_32.png" alt=""></a>
+        </li>
                   
-                  <li class="socialIcons"><a href="https://www.facebook.com/people/Lucí-Madera/100070069163962/" role="button"><img src="images/facebook32.png" alt=""></a></li>
+        <li class="socialIcons">
+          <a href="https://www.facebook.com/people/Lucí-Madera/100070069163962/" role="button">
+            <img src="images/facebook32.png" alt=""></a>
+        </li>
                   
-                  <li class="socialIcons"><a href="https://api.whatsapp.com/message/SVDZFGJYSJEEK1?autoload=1&app_absent=0" role="button"><img src="images/whatsapp_32.png" alt=""></a></li>
-              </ul>
-            </footer>
-       <!-- fin div footer -->
+        <li class="socialIcons">
+          <a href="https://api.whatsapp.com/message/SVDZFGJYSJEEK1?autoload=1&app_absent=0" role="button">
+            <img src="images/whatsapp_32.png" alt=""></a>
+        </li>
 
-
-
-
-      
-
+      </ul>
+    </div>
+  </footer> <!-- fin footer -->
+       
+</div> <!-- div container -->
 
 
 

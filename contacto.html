@@ -25,27 +25,62 @@
 
 <body>
     
+    <div class="container"> <!-- div contenedor de todo -->
+    <div class="contacto"> 
+    
+    
+<header class="encabezado_contacto"> <!-- encabezado -->
+    <h2>CONTACTO</h2>  
         
-    <div class="contacto"> <!-- div contenedor de todo -->
-    
-    
-    <header class="titulosh2"> <!-- encabezado -->
-        <h2>CONTACTO</h2>   
-    </header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">LUCÍMADERA</a>
+     
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-item active" href="nosotros.html">Nosotros</a>
+                    </li>
+                    
+                    <li class="nav-item">      
+                        <a class="nav-link nav-item active" href="productos.html">Productos</a>
+                    </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link nav-item active" href="galeria.html">Galería</a>
+                    </li>
 
-<!-- formulario -->
+                    <li class="nav-item">
+                    <a class="nav-link nav-item active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
 
-
-<main class="formulario"> 
-    
-    <form action="ACERCANOS TU CONSULTA">
+        </div>
+    </nav>
         
-        <input type="Nombre y Apellido">  Nombre y Apellido <br>
-        <input type="Teléfono"> Teléfono <br>
-        <input type="E-mail"> E-mail <br>
-        <textarea name="Escribe aquí tu consulta" id="" cols="30" rows="10"> Escribe aquí tu consulta </textarea>
+</header>
+
+
+
+
+
+
+<!--_________ FORMULARIO  ______-->
+
+
+<main class="formulario row"> 
+    
+    <form class="col-lg-12" action="ACERCANOS TU CONSULTA">
+        <div><input type="Nombre y Apellido">Nombre y Apellido</div>
+        <div><input type="Teléfono">Teléfono</div>
+        <div><input type="E-mail">E-mail</div>
+
+        <div><textarea name="Escribe aquí tu consulta" cols="30" rows="10"> Escribe aquí tu consulta </textarea></div>
 
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Enviar
@@ -63,35 +98,18 @@
 
 </main>
 
+<!--_________ Fin FORMULARIO ___________ -->
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- fin formulario -->
-
-
-
-
-
-    <footer class="fondoFooterContacto">
-        <div class="volver">
-        <a href="index.html" role="button"><img src="images/volver.png" alt="volver al inicio"></a>
-        </div>
-
+    <footer class="fondoFooterContacto row">
         
-        <ul class="social">
+        
+        
+        <ul class="social col-lg-12">
+            
             <li class="socialIcons"><a href="https://instagram.com/lucimadera.arg?igshid=YmMyMTA2M2Y=" role="button"><img src="images/instagram_32.png" alt=""></a></li>
                 
             <li class="socialIcons"><a href="https://www.facebook.com/people/Lucí-Madera/100070069163962/" role="button"><img src="images/facebook32.png" alt=""></a></li>
@@ -104,6 +122,7 @@
 
 
    
+</div>
 </div>
 
 <!--link body de Bootstrap -->

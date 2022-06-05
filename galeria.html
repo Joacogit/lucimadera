@@ -4,68 +4,189 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
 
 <!-- google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
 <!-- fin google fonts -->
 
-    <title>GALERIA</title> <!-- //// GALERIA SIN RESPONSIVE (ESTILO DESEADO ////) -->
-
+    <title>Galería</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 
+<!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<div class="container">
-   
-
-    <header class="titulosh2"> <!-- encabezado -->
+    <div class="container">
+<header class="titulosh2">
         <h2>GALERIA</h2>   
-    </header>
 
-    <div class="grid-container"> <!-- caja q contiene todo -->
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">LUCÍMADERA</a>
+       
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+              </button>
+  
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link nav-item active" href="nosotros.html">Nosotros</a>
+                      </li>
+                      
+                      <li class="nav-item">      
+                          <a class="nav-link nav-item active" href="productos.html">Productos</a>
+                      </li>
+  
+                      <li class="nav-item">
+                          <a class="nav-link nav-item active" href="galeria.html">Galería</a>
+                      </li>
+  
+                      <li class="nav-item">
+                      <a class="nav-link nav-item active" href="contacto.html">Contacto</a>
+                      </li>
+                  </ul>
+              </div>
+  
+          </div>
+      </nav>
+
+</header>
     
-                <div class="grid-item"><img src="images/11-.jpeg" alt="cuadro con estante"></div>
-                <div class="grid-item"><img src="images/111.jpeg" alt="cuadro con estante1"></div>  
-                <div class="grid-item"><img src="images/cuadcestante.jpeg" alt="cuadro con lampara1"></div>
-                <div class="grid-item"><img src="images/222.jpeg" alt="velador"></div>
-                <div class="grid-item"><img src="images/333.jpeg" alt="velador1"></div>
-                <div class="grid-item"><img src="images/444.jpeg" alt="cuadro con lampara"></div>
-                <div class="grid-item"><img src="images/555.jpeg" alt="cuadro1"></div>
-                <div class="grid-item"><img src="images/666.jpeg" alt="cuadro2"></div>
-                <div class="grid-item"><img src="images/aplique.jpeg" alt="aplique"></div>
-                <div class="grid-item"><img src="images/lampdeco.jpeg" alt="velador"></div>
-                <div class="grid-item"><img src="images/cuadestante3.jpeg" alt="cuadro con estante"></div>
-                <div class="grid-item"><img src="images/lamp1.jpeg" alt="cuadro con estante"></div>
-          
-    </div>
+    
+ 
+<main class="main-galeria1">    
 
-    <footer>
-       <div class="volver">
-        <a href="index.html" role="button"><img src="images/volver.png" alt="volver al inicio"></a>
-       </div>
+<!-- primer fila de imagenes -->
 
-        <ul class="social">
-            <li class="socialIcons"><a href="https://instagram.com/lucimadera.arg?igshid=YmMyMTA2M2Y=" role="button"><img src="images/instagram_32.png" alt=""></a></li>
+<div class="row containerFotos">                                   <!-- inicio row -->         
+        
+
+    <div class="fotos col-lg-4"> <!-- inicio col -->
+              <div class="card">
+                <img src="images/cuadcestante.jpeg" alt="cuadro con estante"/>
+              </div>
+            </div><!-- fin col -->
+
+    <div class="fotos col-lg-4"> <!-- inicio col -->
+              <div class="card">
+                <img src="images/aplique.jpeg" alt="aplique"/>
+              </div>
+            </div><!-- fin col -->
+
+    <div class="fotos col-lg-4"> <!-- inicio col -->
+              <div class="card">
+                <img src="images/lampdeco.jpeg" alt="lampara"/>
+              </div>
+           </div>  <!-- fin col -->
+
+</div>                                              <!-- fin row-->
+
+
+
+
+
+<!-- segunda fila de imagenes -->
+
+    
+<div class="row containerFotos">                           <!-- inicio row -->
+        
+    <div class="fotos col-lg-4"> <!-- inicio col -->
+        <div class="card">
+          <img src="images/555.jpeg" alt="cuadro con luces"/>
+        </div>
+      </div><!-- fin col -->
+
+<div class="fotos col-lg-4"> <!-- inicio col -->
+        <div class="card">
+          <img src="images/cuadestante.jpeg" alt="cuadro con estante"/>
+        </div>
+      </div><!-- fin col -->
+
+<div class="fotos col-lg-4"> <!-- inicio col -->
+        <div class="card">
+          <img src="images/veldepared.jpeg" alt="velador"/>
+        </div>
+     </div>  <!-- fin col -->
+
+
+</div>                                              <!-- fin row -->
+
+<!-- tercer fila de imagenes -->
+
+    
+<div class="row containerFotos">                           <!-- inicio row -->
+        
+    <div class="col-lg-4"> <!-- inicio col -->
+        <div class="card">
+          <img src="images/11-.jpeg" alt="cuadro con lamp"/>
+        </div>
+      </div><!-- fin col -->
+
+<div class="col-lg-4"> <!-- inicio col -->
+        <div class="card">
+          <img src="images/222.jpeg" alt="velador"/>
+        </div>
+      </div><!-- fin col -->
+
+<div class="col-lg-4"> <!-- inicio col -->
+        <div class="card">
+          <img src="images/333.jpeg" alt="velador"/>
+        </div>
+     </div>  <!-- fin col -->
+
+
+</div>                                              <!-- fin row -->
+
+<!-- cuarta fila de imagenes -->
+
+    
+<div class="row containerFotos">                           <!-- inicio row -->
+        
+    <div class="col-lg-4"> <!-- inicio col -->
+        <div class="card">
+          <img src="images/lamp1.jpeg" alt="cuadro con lamp"/>
+        </div>
+      </div><!-- fin col -->
+
+<div class="col-lg-4"> <!-- inicio col -->
+        <div class="card">
+          <img src="images/666.jpeg" alt="velador"/>
+        </div>
+      </div><!-- fin col -->
+
+<div class="col-lg-4"> <!-- inicio col -->
+        <div class="card">
+          <img src="images/cuadestante3.jpeg" alt="velador"/>
+        </div>
+     </div>  <!-- fin col -->
+
+
+</div>                                              <!-- fin row -->
+
+</main>
+<!-- footer -->
+
+
+<footer>
+    
+            <ul class="social">
+                <li class="socialIcons"><a href="https://instagram.com/lucimadera.arg?igshid=YmMyMTA2M2Y=" role="button"><img src="images/instagram_32.png" alt=""></a></li>
                 
-            <li class="socialIcons"><a href="https://www.facebook.com/people/Lucí-Madera/100070069163962/" role="button"><img src="images/facebook32.png" alt=""></a></li>
+                <li class="socialIcons"><a href="https://www.facebook.com/people/Lucí-Madera/100070069163962/" role="button"><img src="images/facebook32.png" alt=""></a></li>
                 
-            <li class="socialIcons"><a href="https://api.whatsapp.com/message/SVDZFGJYSJEEK1?autoload=1&app_absent=0" role="button"><img src="images/whatsapp_32.png">
-
-        </ul>
-    </footer>
-
-
-</div>
+                <li class="socialIcons"><a href="https://api.whatsapp.com/message/SVDZFGJYSJEEK1?autoload=1&app_absent=0" role="button"><img src="images/whatsapp_32.png" alt=""></a></li>
+            </ul>
+        </footer> <!-- fin  footer -->
 
 
-    <!--link body de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+      </div>
+
+    <!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
